@@ -1,7 +1,6 @@
-# domz-go-iter1
+# find-public-gcs-objects
 
-This is an entry for SCE Programming Challenge #1, put forward by dparrish@. It is written
-in Go.
+This program finds objects in a GCS bucket with ACLs that allow public access to the object.
 
 ## Usage
 
