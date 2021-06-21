@@ -22,5 +22,5 @@ directories with single files in them.
 
 ## Runtime
 
-On a standard 8-core "Cloudtop" GCE instance, runtime was approximately 2m13s over three 
+On an n1-highcpu-16 GCE instance, runtime was approximately 1m20s over three 
 test runs. This scanned 214367 files with 14 positive results.
