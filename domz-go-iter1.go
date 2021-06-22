@@ -40,10 +40,6 @@ func main() {
 	wg.Wait()
 }
 
-// List implements a traversal of the bucket's prefixes, starting from the prefix
-// with which it is invoked. Objects with prefix values (a synthetic "directory") are
-// dispatched into a new List goroutine, while objects without are dispatched into a
-// Check goroutine.
 func ListAndCheck(ctx context.Context, wg *sync.WaitGroup, delimiter string, prefix string, bh *storage.BucketHandle) {
 	//fmt.Println("LISTING: " + prefix)
 	dirQuery := storage.Query{Delimiter: delimiter, Prefix: prefix}
